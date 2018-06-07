@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<title> "HOSPITAL ASSIGNMENT "</title>
+<head>
+
+<div align="center">
+
+</div>
+<script>
+function validate()
+{
+var numbers=/^[0-9]+$/;
+if(!(document.form4.p_code.value.match(numbers)))
+	 {
+	 alert('invalid entry of patient id');
+	 return false;
+	 }
+	 else
+	 {
+	 return true;
+	 }
+}
+</script>
+<style>
+body {
+            background-image: url("LL.jpg");
+            background-repeat: repeat;
+         }
+         
+      </style>
+</head>
+<div align="center">
+<h1 style="text-align:center;font-size:200%;color:66FFFF; font-family:courier">HOSPITAL ASSIGNMENT</h1>
+</div>
+
+<body style="text-align:center;font-size:200%;color:66FFFF; font-family:courier">
+<form name="form4" action="hospital_assign.php" method="POST" onsubmit="return validate()">
+<div align="center">
+PATIENT CODE: <br>
+<input type="text" name="p_code" required>
+</div>
+<br><br>
+<div align="center">
+<select name="mydropdown">
+<option value="GEN">GENERAL</option>
+<option value="PED">PEDO</option>
+<option value="EMER">EMERGENCY</option>
+<option value="cardio">CARDIO</option>
+<option value="ortho">ORTHO</option>
+</select>
+<br>
+
+
+<input type="radio" name="oipd" value="opd" required> OPD
+<br><br>
+<input type="radio" name="oipd" value="ipd" required> IPD
+<br><br>
+<textarea name='text' cols='40' rows='3'>$text</textarea>
+<br><br>
+<input type="submit" style="cursor:pointer;text-align:center; font-size:100%;color:660099;font-family:courier"value="Submit">
+<br>
+</div>
+</form>
+</body>
+</html>

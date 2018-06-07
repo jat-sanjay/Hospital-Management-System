@@ -1,0 +1,92 @@
+
+
+<html>
+<title> LOGIN</title>
+<head>
+<script language="javascript" type="text/javascript">
+	 function validateform()
+	 {
+	 var numbers=/^[0-9]+$/;
+	 var letters=/^[0-9a-zA-Z]+$/;
+	 if(!(document.form1.h_code.value.match(numbers)))
+	 {
+	 alert('Invalid entry of id');
+	 return false;
+	 }
+	 else if(!(document.form1.pass.value.match(letters)))
+	 {
+	 alert('Invalid entery of password');
+	 return false;
+	 }
+	 else
+	 {
+	 return true;
+	 }
+	 }
+	 </script>
+
+
+<style>
+body {
+            background-image: url("black.jpg");
+            
+         }
+</style>
+<style type="text/css">
+         p.example1{
+            border:1px solid;
+            border-bottom-color:#009900; /* Green */
+            border-top-color:#FF0000;    /* Red */
+            border-left-color:#330000;   /* Black */
+            border-right-color:#0000CC;  /* Blue */
+font-family:georgia,garamond,serif;
+font-size:200%;
+background-color: #993333;
+         }
+         
+      </style>
+
+</head>
+<body style="text-align:center;font-size:200%;color:FFCC33; font-family:courier">
+
+<p class="example1">
+     SANJEEVANI
+      </p>
+
+
+	<h2 style="cursor:pointer;text-align:center; font-size:150%;color:99CC00;font-family:courier">LOGIN</h2>
+      <form name="form1" method="post" action="login2.php" onsubmit="return validateform()">
+         <table>
+             <tr>
+               <td>Category</td>
+               <td>
+                 <style="text-align:center;font-size:200%;color:CC3399; font-family:courier">
+                  <input type="radio" style="text-align:center;font-size:150%;color:CC3399; font-family:courier"name="cat_type" value="Govth" required>Government Hospital
+                  <input type="radio" style="text-align:center;font-size:150%;color:CC3399; font-family:courier"name="cat_type" value="Privh" required>Private Hospital
+				  <input type="radio" style="text-align:center;font-size:150%;color:CC3399; font-family:courier"name="cat_type" value="Govtp" required>Government Paramedic
+                  <input type="radio" style="text-align:center;font-size:150%;color:CC3399; font-family:courier"name="cat_type" value="Privd" required>Private Hospital Doctor
+				  <input type="radio" style="text-align:center;font-size:150%;color:CC3399; font-family:courier"name="cat_type" value="Pat" required>Patient
+               </td>
+            </tr>
+            
+            <tr>
+               <td>Id:</td>
+               <td> <input type="text" style="text-align:center;font-size:150%;color:CC3399; font-family:courier"name="h_code" required><li class="rq">*Enter digits only.</li></td>
+            </tr>
+ <tr>
+               <td>Password</td>
+               <td> <input type="password" style="text-align:center;font-size:150%;color:CC3399; font-family:courier"name="pass"required></td>
+            </tr>
+            
+           
+            
+            <tr>
+               <td>
+                  <input type="submit" style="cursor:pointer;text-align:center; font-size:150%;color:99CC00;font-family:courier" value="Submit"> 
+               </td>
+            </tr>
+         </table>
+      </form>
+<img src="jjj.gif" alt="Mountain View" style="width:504px;height:310px; float:right; border:3px dashed yellow;"">
+</body>
+</html>
